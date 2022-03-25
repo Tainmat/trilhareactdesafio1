@@ -20,13 +20,13 @@ export function TaskList() {
         if (newTaskTitle.length < 1) return
 
         setNewId(newId + 1)
-        const task: Task = {
+        const newTask: Task = {
             id: newId,
             title: newTaskTitle,
             isComplete: false
         }
 
-        setTasks([...tasks, task])
+        setTasks([...tasks, newTask])
         setNewTaskTitle('')
     }
 
